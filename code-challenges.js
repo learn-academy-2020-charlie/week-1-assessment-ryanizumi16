@@ -9,14 +9,26 @@
 var temp1 = 35
 var temp2 = 350
 var temp3 = 212
-
+//   const boil = (temp) => {
+//     if (temp1 < 212) {
+//       return  "below boiling point"
+//   } if (temp2 > 212) {
+//       return "above boiling point"
+//   }  if (temp3 == 212) {
+//       return "at boiling point"
+//   }
+//   }
+// console.log(boil(""));
 
 
 
 // --------------------2) Create a function that multiplies each number in the array by 5 using a for loop.
 // Use the test variable provided below. Expected outcome: [15, 35, 0, 30, -45]
 
-var myNumbers1 = [3, 7, 0, 6, -9]
+// var myNumbers1 = [3, 7, 0, 6, -9]
+// for (var i = 0; i < myNumbers1.length; i++){
+// }
+// console.log(i*5);
 
 
 
@@ -24,7 +36,15 @@ var myNumbers1 = [3, 7, 0, 6, -9]
 // --------------------3) Create a function that multiplies each number in the array by 5 using map.
 // Use the test variable provided below. Expected outcome: [40, -35, 0, 30, 10]
 
-var myNumbers2 = [8, -7, 0, 6, 2]
+// var myNumbers2 = [8, -7, 0, 6, 2];
+//   const mult5 = (array) => {
+//     let newArr = array.map(value => {
+//       return  value * 5;
+//     })
+//     return newArr;
+//   }
+// console.log(mult5(myNumbers2));
+
 
 
 
@@ -33,6 +53,11 @@ var myNumbers2 = [8, -7, 0, 6, 2]
 // Use the test variables provided below. Expected output: [ "Chai tea", "Mocha", "Double espresso" ]
 
 var coffeeRun = ["Vanilla latte", "Chai tea", "Black coffee", "Mocha", "Americano", "Double espresso"]
+  const oddIndex = (array) => {
+    let newArr = array.map(value => [
+      return value
+    ])
+  }
 
 
 
@@ -42,6 +67,11 @@ var coffeeRun = ["Vanilla latte", "Chai tea", "Black coffee", "Mocha", "American
 
 var stringWithVowels1 = "HeyThereLearnStudent"
 var stringWithVowels2 = "ILoveJavaScript"
+  // const noVowels =(array) => {
+  //   let stringWithVowels1 = array.filter (value => {
+  //     return typeof value === ""
+  //   })
+  // }
 
 
 
