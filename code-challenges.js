@@ -9,7 +9,18 @@
 var temp1 = 35
 var temp2 = 350
 var temp3 = 212
-
+  const boil = (number) => {
+    if (number > 212) {
+      return `${ number } is above boiling point.`
+  }   else if (number < 212) {
+      return `${ number } is below boiling point.`
+  }   else if (number === 212) {
+      return `${number } at boiling boint.`
+  }
+}
+console.log(boil(temp1));
+console.log(boil(temp2));
+console.log(boil(temp3));
 
 
 
@@ -17,14 +28,29 @@ var temp3 = 212
 // Use the test variable provided below. Expected outcome: [15, 35, 0, 30, -45]
 
 var myNumbers1 = [3, 7, 0, 6, -9]
-
+  const mult5 = (array) => {
+    let newArr = []
+    for(let i = 0; i < array.length; i++){
+      newArr.push(array[i] *= 5)
+    }
+      return newArr
+  }
+console.log(mult5(myNumbers1));
 
 
 
 // --------------------3) Create a function that multiplies each number in the array by 5 using map.
 // Use the test variable provided below. Expected outcome: [40, -35, 0, 30, 10]
 
-var myNumbers2 = [8, -7, 0, 6, 2]
+var myNumbers2 = [8, -7, 0, 6, 2];
+  const mult5 = (array) => {
+    let newArr = array.map(value => {
+      return  value * 5;
+    })
+    return newArr;
+  }
+console.log(mult5(myNumbers2));
+//
 
 
 
@@ -33,7 +59,12 @@ var myNumbers2 = [8, -7, 0, 6, 2]
 // Use the test variables provided below. Expected output: [ "Chai tea", "Mocha", "Double espresso" ]
 
 var coffeeRun = ["Vanilla latte", "Chai tea", "Black coffee", "Mocha", "Americano", "Double espresso"]
-
+  const oddIndex = (oldArray) => {
+    return oldArray.filter((value, index) => {
+      return index %2 != 0
+    })
+  }
+console.log(oddIndex(coffeeRun));
 
 
 
@@ -42,7 +73,18 @@ var coffeeRun = ["Vanilla latte", "Chai tea", "Black coffee", "Mocha", "American
 
 var stringWithVowels1 = "HeyThereLearnStudent"
 var stringWithVowels2 = "ILoveJavaScript"
-
+  const noVo = (string) => {
+    let vowArr = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    let charArr = string.split("")
+    let novowArr = charArr.filter((value, index) => {
+      let isVal = true
+      return isVal !== vowArr.includes(charArr[index])
+    }
+    let novowString = novowArr.join("")
+    return novowString
+  }
+console.log(noVo(stringWithVowels1));
+console.log(noVo(stringWithVowels2));
 
 
 
